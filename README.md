@@ -55,15 +55,18 @@ Installation and Setup:
 1.Clone the Repository
   git clone https://github.com/YourUsername/LifeSignal.git
   cd LifeSignal
+  
 2.Install Dependencies
   pip install -r requirements.txt
 (Ensure your requirements.txt includes: azure-iot-device, streamlit, pandas, numpy, plotly, requests)
+
 3 . Configure Azure Keys
-Open 3_dashboard.py and 2_sensor_node.py to update your keys:
-IoT Hub Connection String: In 2_sensor_node.py
-Azure Maps Key: In 3_dashboard.py
-Azure Translator Key: In 3_dashboard.py
-🚀 Usage Guide
+  Open 3_dashboard.py and 2_sensor_node.py to update your keys:
+  IoT Hub Connection String: In 2_sensor_node.py
+  Azure Maps Key: In 3_dashboard.py
+  Azure Translator Key: In 3_dashboard.py
+
+🚀 Usage Guide:
 Step 1: Generate Physics Data
     Creates synthetic physiological signal data for the demo.
     python 1_generate_data.py
@@ -75,7 +78,7 @@ Step 3: Launch Commander Dashboard (The Frontend)
     streamlit run 3_dashboard.py
 
 
-🎬 Demo Scenarios
+🎬 Demo Scenarios:
 Scenario A: "Scanning Mode" (0s - 15s)
 Visual: Dashboard shows Green status "SCANNING SECTOR...".
 Graph: Flat lines with minor thermal noise.
@@ -93,6 +96,7 @@ Lead Architect: Cloud Infrastructure & IoT
 AI Research Lead: Signal Processing & ML Models
 Embedded Systems: Hardware & Sensor Design
 Product Strategy: B2G Business Model & UI/UX
+
 📄 License
 This project is submitted for the Microsoft Imagine Cup 2026.
 Distributed under the MIT License. See LICENSE for more information.
